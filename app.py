@@ -2,14 +2,17 @@
 import streamlit as st
 from PIL import Image
 
-st.write('Hello, *World!* :sunglasses:') # 해당 내용을 수정해서 사이트를 자유롭게 꾸밀 수 있다.
+st.write('[2조] 안상후, 오서연, 정아영 :sunglasses:') # 해당 내용을 수정해서 사이트를 자유롭게 꾸밀 수 있다.
 
-st.title('this is title')
+st.title('금속 주조 공정 최적화')
 st.header('this is header')
 st.subheader('this is subheader')
 
+df = pd.read_csv("data/data_week4.csv")
+pr = df.profile_report()
+
 # 탭 생성 : 첫번째 탭의 이름은 Tab A 로, Tab B로 표시합니다.
-tab1, tab2= st.tabs(['Tab A' , 'Tab B'])
+tab1, tab2= st.tabs(['다이캐스팅' , 'Tab B'])
 
 with tab1:
   #tab A 를 누르면 표시될 내용
