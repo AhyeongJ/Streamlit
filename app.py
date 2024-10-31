@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
@@ -7,8 +8,6 @@ from PIL import Image
 st.write('[2조] 안상후, 오서연, 정아영 :sunglasses:') # 해당 내용을 수정해서 사이트를 자유롭게 꾸밀 수 있다.
 
 st.title('금속 주조 공정 최적화')
-st.header('this is header')
-st.subheader('this is subheader')
 
 df = pd.read_csv("data/data_week4.csv", encoding='cp949')
 st.write(df)
